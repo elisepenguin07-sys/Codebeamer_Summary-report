@@ -66,12 +66,36 @@ else:
   st.info("Please fill in Test type and Test version")
 
 st.subheader("3.2 Overall Status / 總體狀態")
-st.markdown("3.2.1Progress And Criteria / 進度和標準")
+st.markdown("3.2.1 Progress And Criteria / 進度和標準")
 if Project and Test_en and Test_cn:
   st.write(f"""The table below is the progress of {Test_en} for {Project}.
   下表是{Project}項目的{Test_cn}的進度和標準。""")
 else:
    st.info("Please fill in Test type and Project")
+
+st.markdown("3.2.2 Overall Status Information / 總體狀態資訊")
+if Project and Test_en and Test_cn:
+  st.write(f"""The table below is the overall status information of {Test_en} for {Project}. 
+            下表是{Project} 的{Test_cn}的總體狀態資訊，且已符合{Test_cn}退出標準。""")
+
+st.markdown("3.2.3 Test Case Execution Status / 測試案例執行狀態")
+if Project and Test_en and Test_cn:
+  st.write(f"""The following table is the test case execution rate of {Project} {Test_en} and the number of corresponding function names.
+            下表是 {Project} dashcam 的{Test_cn}的測試案例執行率與對應的功能名稱數量。""")
+
+st.markdown("3.2.4 Defect Trend / 缺陷趨勢")
+if Project and Test_en and Test_cn:
+  st.write(f"""The table below is the defect trend of {Test_en} for {Project} (Observed version is from 0001 to 0011).
+             下表是{Project}{Test_cn}中所發現的缺陷趨勢 (觀察的版本從0001到0011)。""")
+
+st.markdown("3.2.5 Defect Distribution by Priority / 按優先級的缺陷分佈")
+if Project and Test_en and Test_cn:
+  st.write(f"""The table below is the defect distribution by priority of {Test_en} for {Project}.
+              下表是{Project}的{Test_cn}依照優先級別的缺陷分佈。""")
+
+st.markdown("3.2.6 Defect Status / 缺陷狀態")
+st.write(f"""Defect list would be exported from PRM system and display defects information.
+             缺陷列表將從PRM系統中導出，並顯示缺陷處理狀態。""")
 
 
 
