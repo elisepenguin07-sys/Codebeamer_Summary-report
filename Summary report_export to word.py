@@ -58,8 +58,7 @@ else:
 #Overview
 st.header("Software Qualification Test Summary Report Overview / 軟體合格測試總結報告概述")
 if Test_version:
-  st.write(f"""This information is for {Test_version} version to fully test the software qualification testing.\n
-        此資訊為{Test_version}版本進行的軟體合格測試 (全量)""")
+  st.write(f"""This information is for {Test_version} version to fully test the software qualification testing.\n此資訊為{Test_version}版本進行的軟體合格測試 (全量)""")
 else:
   st.info("Please fill in Test version")
 
