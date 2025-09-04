@@ -81,7 +81,7 @@ if Project and Test_en and Test_cn:
 st.markdown("3.2.3 Test Case Execution Status / 測試案例執行狀態")
 if Project and Test_en and Test_cn:
   st.write(f"""The following table is the test case execution rate of {Project} {Test_en} and the number of corresponding function names.
-            下表是 {Project} dashcam 的{Test_cn}的測試案例執行率與對應的功能名稱數量。""")
+            下表是 {Project}的{Test_cn}的測試案例執行率與對應的功能名稱數量。""")
 
 st.markdown("3.2.4 Defect Trend / 缺陷趨勢")
 if Project and Test_en and Test_cn:
