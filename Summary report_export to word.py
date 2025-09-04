@@ -42,15 +42,15 @@ if uploaded_file2 is not None:
 #Purpose
 st.header("1. Purpose / 目的")
 if Project and Test_en and Test_cn:
-  st.write(f"""The purpose of this document is the {Test_en} summary report of the {Project} project.\n
-本文件目的為{Project}項目的{Test_cn}總結報告""")
+  st.write(f"""The purpose of this document is the {Test_en} summary report of the {Project} project.
+  本文件目的為{Project}項目的{Test_cn}總結報告""")
 else:
    st.info("Please fill in project name and test type.")
 
 #Scope
 st.header("2. Scope / 適用範圍")
 if Project and Test_en and Test_cn and Title:
-  st.write(f"""The scope of the software qualification test summary report of the {Project} project is applicable to the {Test_en}ing performed on the software version defined in the release plan.\n
+  st.write(f"""The scope of the software qualification test summary report of the {Project} project is applicable to the {Test_en}ing performed on the software version defined in the release plan
 {Project} 項目專案的{Title}的範圍適用於發布計劃裡定義的軟體版本所進行的{Test_cn}
 """)
 else:
@@ -60,14 +60,16 @@ else:
 st.header(f"3. {Test_en} Summary Report Overview / {Test_cn}總結報告概述")
 st.subheader("3.1 Test Information Overview / 測試資訊概述 ")
 if Test_en and Test_cn and Test_version:
-  st.write(f"""This information is for {Test_version} version to fully test the {Test_en}.\n 此資訊為{Test_version}版本進行的{Test_cn} (全量)""")
+  st.write(f"""This information is for {Test_version} version to fully test the {Test_en}.
+  此資訊為{Test_version}版本進行的{Test_cn} (全量)""")
 else:
   st.info("Please fill in Test type and Test version")
 
 st.subheader("3.2 Overall Status / 總體狀態")
 st.markdown("3.2.1Progress And Criteria / 進度和標準")
 if Project and Test_en and Test_cn:
-  st.write(f"""The table below is the progress of {Test_en} for {Project}.\n下表是{Project}項目的{Test_cn}的進度和標準。""")
+  st.write(f"""The table below is the progress of {Test_en} for {Project}.
+  下表是{Project}項目的{Test_cn}的進度和標準。""")
 else:
    st.info("Please fill in Test type and Project")
 
