@@ -60,14 +60,14 @@ else:
 st.header(f"3. {Test_en} Summary Report Overview / {Test_cn}總結報告概述")
 st.subheader("3.1 Test Information Overview / 測試資訊概述 ")
 if Test_en and Test_cn and Test_version:
-  st.write(f"""This information is for {Test_version} version to fully test the {Test_en}.\n此資訊為{Test_version}版本進行的{Test_cn} (全量)""")
+  st.write(f"""This information is for {Test_version} version to fully test the {Test_en}.\n 此資訊為{Test_version}版本進行的{Test_cn} (全量)""")
 else:
   st.info("Please fill in Test type and Test version")
 
 st.subheader("3.2 Overall Status / 總體狀態")
 st.markdown("3.2.1Progress And Criteria / 進度和標準")
 if Project and Test_en and Test_cn:
-  st.wrtie(f"""The table below is the progress of {Test_en} for {Project}.\n下表是{Project}項目的{Text_cn}的進度和標準。""")
+  st.write(f"""The table below is the progress of {Test_en} for {Project}.\n下表是{Project}項目的{Text_cn}的進度和標準。""")
 else:
    st.info("Please fill in Test type and Project")
 
