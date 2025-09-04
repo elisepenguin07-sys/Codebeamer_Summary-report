@@ -49,7 +49,7 @@ else:
 
 #Scope
 st.header("Scope / 適用範圍")
-if Project and Text and Title:
+if Project and Test and Title:
   st.write(f"""The scope of the software qualification test summary report of the {Project} project is applicable to the {Test}ing performed on the software version defined in the release plan.\n
 {Project} 項目專案的{Title}的範圍適用於發布計劃裡定義的軟體版本所進行的{Test}
 """)
