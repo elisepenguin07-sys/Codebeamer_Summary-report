@@ -65,7 +65,7 @@ else:
   st.info("Please fill in Test type and Test version")
 
 st.subheader("3.2 Overall Status / 總體狀態")
-st.makedown("3.2.1Progress And Criteria / 進度和標準")
+st.markdown("3.2.1Progress And Criteria / 進度和標準")
 if Project and Test_en and Test_cn:
   st.wrtie(f"""The table below is the progress of {Test_en} for {Project}.\n下表是{Project}項目的{Text_cn}的進度和標準。""")
 else:
