@@ -5,8 +5,6 @@ from docx import Document
 from docx.shared import Pt
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
 
-doc = Document()
-
 #webstie title
 st.title("Summary Report")
 
@@ -17,6 +15,7 @@ Name = st.text_input("Please enter the document editor's name.")
 Project = st.text_input("Please enter the project name")
 Date= st.text_input("Please enter the edit date")
 Test = st.selectbox("Please select the test type", ["Software Integration Test", "Software Qualification Test", "System Integration Test", "System Qualification Test"])
+Test_version = st.text_input("Please enter the text version")
 
 #Upload file
 redmine_df = None
@@ -42,7 +41,7 @@ if uploaded_file2 is not None:
 #Purpose
 st.header("Purpose / 目的")
 if Project and Test:
-  st.write(f"""The purpose of this document is the {Test} summary report of the {Project} project.
+  st.write(f"""The purpose of this document is the {Test} summary report of the {Project} project.\n
 本文件目的為{Project}項目的{Test}總結報告""")
 else:
    st.info("Please fill in project name and test type.")
@@ -55,3 +54,14 @@ if Project and Test and Title:
 """)
 else:
   st.info("Please fill in project name, test type and file name.")
+
+#Overview
+st.header("Software Qualification Test Summary Report Overview / 軟體合格測試總結報告概述")
+if Test_version:
+  st.write(f"""This information is for {Test_version} version to fully test the software qualification testing.\n
+        此資訊為{Test_version}版本進行的軟體合格測試 (全量)""")
+else:
+  st.info("Please fill in Test version")
+
+
+
