@@ -53,4 +53,5 @@ if Project and Text and Title:
   st.write(f"""The scope of the software qualification test summary report of the {Project} project is applicable to the {Test}ing performed on the software version defined in the release plan.\n
 {Project} 項目專案的{Title}的範圍適用於發布計劃裡定義的軟體版本所進行的{Test}
 """)
- st.info("Please fill in project name, test type and file name.")
+else:
+  st.info("Please fill in project name, test type and file name.")
