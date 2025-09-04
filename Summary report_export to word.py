@@ -15,7 +15,7 @@ Name = st.text_input("Please enter the document editor's name.")
 Project = st.text_input("Please enter the project name")
 Date= st.text_input("Please enter the edit date")
 Test_en = st.selectbox("Please select the test type(EN)", ["Software Integration Test", "Software Qualification Test", "System Integration Test", "System Qualification Test"])
-Test_cn = st.selectbox("Please select the test type"(CN), ["軟體整合測試", "軟體合格測試", "系統整合測試", "系統合格測試"])
+Test_cn = st.selectbox("Please select the test type(CN)", ["軟體整合測試", "軟體合格測試", "系統整合測試", "系統合格測試"])
 Test_version = st.text_input("Please enter the text version")
 
 #Upload file
