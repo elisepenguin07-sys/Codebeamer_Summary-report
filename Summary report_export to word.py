@@ -42,12 +42,12 @@ if uploaded_file2 is not None:
 #Purpose
 st.header("Purpose / 目的")
 if Project and Text:
-  st.write(f"The purpose of this document is the {Text} summary report of the {Project} project.\n
-本文件目的為{Project}項目的{Text}總結報告")
+  st.write(f"""The purpose of this document is the {Text} summary report of the {Project} project.
+本文件目的為{Project}項目的{Text}總結報告""")
 
 #Scope
 st.header("Scope / 適用範圍")
 if Project and Text and Title:
-  st.write(f"The scope of the software qualification test summary report of the {Project} project is applicable to the {Text}ing performed on the software version defined in the release plan./n
+  st.write(f"""The scope of the software qualification test summary report of the {Project} project is applicable to the {Text}ing performed on the software version defined in the release plan.\n
 {Project} 項目專案的{Title}的範圍適用於發布計劃裡定義的軟體版本所進行的{Text}
-")
+""")
