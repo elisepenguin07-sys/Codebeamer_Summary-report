@@ -50,7 +50,7 @@ else:
 #Scope
 st.header("2. Scope / 適用範圍")
 if Project and Test_en and Test_cn and Title:
-  st.write(f"""The scope of the software qualification test summary report of the {Project} project is applicable to the {Test_en}ing performed on the software version defined in the release plan
+  st.write(f"""The scope of the {Test_en} summary report of the {Project} project is applicable to the {Test_en}ing performed on the software version defined in the release plan
 {Project} 項目專案的{Title}的範圍適用於發布計劃裡定義的軟體版本所進行的{Test_cn}
 """)
 else:
