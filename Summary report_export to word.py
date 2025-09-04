@@ -5,9 +5,6 @@ from docx import Document
 from docx.shared import Pt
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
 
-plt.rcParams['font.family'] = ['Microsoft JhengHei']  # 微軟正黑體，Windows 預設有
-plt.rcParams['axes.unicode_minus'] = False
-
 doc = Document()
 
 #webstie title
