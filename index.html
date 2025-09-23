@@ -13,16 +13,46 @@
     h2{
       font-family: "Source Han Serif TC";
     }
+    form {
+      background-color: white;
+      display: inline-block;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 200px;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
   <h1>Fraktur & Feder</h1>
   <h2>冷墨誌</h2>
   <form action = "#" method = "post">
-    <input type = "text" name = "username" placeholder = "帳號" required/>
-    <input type = "password" name = "password" placeholder = "密碼" required/>
-    <button type = "submit" >登入</button>
-  </form>form>
+    <input type = "text" name = "username" placeholder = "Account 帳號" required/>
+    <br>
+    <input type = "password" name = "password" placeholder = "Password密碼" required/>
+    <br>
+    <button type = "submit" >Submit 登入</button>
+  </form>
 
 </body>
 </html>
