@@ -8,19 +8,17 @@
     body {
       height: 100vh;
       display: flex;
+      flex-direction: column;        /* 讓 h1/h2 和 form 垂直排列 */
       justify-content: center;
       align-items: center;
       background-color: #f5f5f5;
+      font-family: "Source Han Serif TC", "Crimson Text", serif;
       margin: 0;
-    }
-
-    .container {
-      text-align: center;
     }
 
     h1 {
       font-family: "Crimson Text", serif;
-      margin: 0;
+      margin-bottom: 10px;
     }
 
     h2 {
@@ -28,13 +26,12 @@
       margin-bottom: 30px;
     }
 
-
     form {
       background-color: white;
-      display: inline-block;
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
     input[type="text"],
@@ -58,7 +55,7 @@
     }
 
     button:hover {
-      background-color: #1C3D5A;
+      background-color: #0056b3;
     }
   </style>
 </head>
@@ -67,10 +64,8 @@
   <h2>冷墨誌</h2>
 
   <form action="#" method="post">
-    <input type="text" name="username" placeholder="Account 帳號" required />
-    <br>
-    <input type="password" name="password" placeholder="Password 密碼" required />
-    <br>
+    <input type="text" name="username" placeholder="Account 帳號" required /><br>
+    <input type="password" name="password" placeholder="Password 密碼" required /><br>
     <button type="submit">Submit 登入</button>
   </form>
 </body>
